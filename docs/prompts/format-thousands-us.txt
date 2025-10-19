@@ -1,0 +1,20 @@
+Format integers with US thousands separators (commas).
+
+Goal
+Convert any integer with four or more digits to include commas every three digits, while preserving surrounding context.
+
+Rules
+- Preserve any leading sign (+ or -), currency symbol ($, £, €, etc.), and whitespace.
+- Preserve any trailing units, words, or punctuation (e.g., settlements, users, ms).
+- Do not modify abbreviations or compact units such as 4B, 2.5M, 3k, 4bn.
+- Do not alter decimals or fractional formatting (e.g., 1234.56 stays 1,234.56).
+- Do not change numbers under 1,000.
+- Apply consistently to all occurrences.
+
+Examples
+- 10000 -> 10,000
+- +10000 -> +10,000
+- $10000 -> $10,000
+- 10000 settlements -> 10,000 settlements
+- 1,000 -> 1,000 (no change)
+- 4B -> 4B (no change)
