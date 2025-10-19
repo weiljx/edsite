@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -14,25 +13,11 @@ import AssetManagers from './pages/AssetManagers';
 import Institutions from './pages/Institutions';
 import TradingFirms from './pages/TradingFirms';
 import Team from './pages/Team';
-import ExitIntentModal from './components/ExitIntentModal';
 import Resources from './pages/Resources';
 import TermsOfService from './pages/TermsOfService';
 import Privacy from './pages/Privacy';
 
 function App() {
-  const [showExitIntent, setShowExitIntent] = useState(false);
-
-  React.useEffect(() => {
-    const handleMouseLeave = (e: MouseEvent) => {
-      if (e.clientY <= 0) {
-        setShowExitIntent(true);
-      }
-    };
-
-    document.addEventListener('mouseleave', handleMouseLeave);
-    return () => document.removeEventListener('mouseleave', handleMouseLeave);
-  }, []);
-
   return (
     <Router>
       <div className="min-h-screen bg-white">
@@ -59,10 +44,6 @@ function App() {
           </Routes>
         </main>
         <Footer />
-        <ExitIntentModal 
-          isOpen={showExitIntent} 
-          onClose={() => setShowExitIntent(false)} 
-        />
       </div>
     </Router>
   );
