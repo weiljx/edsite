@@ -107,10 +107,10 @@ const Home = () => {
           <div className="mt-16 pt-16 border-t border-gray-700">
             <p className="trust-heading text-center text-gray-300 mb-8">Trusted by leading institutions worldwide</p>
             <div className="flex justify-center items-center space-x-12 opacity-60">
-              <div className="text-2xl font-bold text-gray-400">COMPANY</div>
-              <div className="text-2xl font-bold text-gray-400">BRAND</div>
-              <div className="text-2xl font-bold text-gray-400">CORP</div>
-              <div className="text-2xl font-bold text-gray-400">ENTERPRISE</div>
+              <div className="text-2xl font-bold text-gray-400">Bitgo</div>
+              <div className="text-2xl font-bold text-gray-400">Utila</div>
+              <div className="text-2xl font-bold text-gray-400">AiPrise</div>
+              <div className="text-2xl font-bold text-gray-400">BCB</div>
             </div>
           </div>
         </div>
